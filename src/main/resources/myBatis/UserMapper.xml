@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mainPage">
+
+    <insert id="insertMain" keyProperty="id">
+        insert into T_fact_data(
+        F_WEB_USERNAME, F_WEB_PASSWORD, F_WEB_EMAIL, F_WEB_REMARK, F_WEB_ADDREES)
+        values
+        (#{userName}, #{password}, #{email}, #{remark}, #{address})
+    </insert>
+
+
+</mapper>
