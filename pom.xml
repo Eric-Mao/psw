@@ -20,6 +20,11 @@
   <dependencies>
   <!-- spring核心包 -->
   <!-- springframe start -->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.1.0</version>
+    </dependency>
   <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-core</artifactId>
@@ -137,7 +142,9 @@
     <artifactId>slf4j-log4j12</artifactId>
     <version>${slf4j.version}</version>
   </dependency>
-  <!-- log end -->
+
+
+    <!-- log end -->
 </dependencies>
 
   <build>
