@@ -1,5 +1,7 @@
 package com.eric.psw.model;
 
+import com.eric.psw.inteface.Page;
+
 import javax.servlet.http.HttpServletRequest;
 
 /**
@@ -7,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
  *  All page's parent page, It provide the basic function like listAll, add, get, modify, del
  *
  */
-public abstract class BasePage {
+public abstract class BasePage implements Page {
     BasePage page = null;
     public abstract BaseResultModel listAll( HttpServletRequest request );
     public abstract BaseResultModel get( String id );
